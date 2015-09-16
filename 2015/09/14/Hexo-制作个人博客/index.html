@@ -5,16 +5,22 @@
   
   <title>Hexo 制作个人博客 | BoxingYi&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="搞了几天，终于找到一个轻便已用的个人blog系统——hexo。配置好一堆东西后，就挂到github上了。">
+  <meta name="description" content="最近发现一个轻便易用的个人blog系统——hexo。配置好一堆东西后，就挂到github上了。
+Hexo的官网为:Hexo。由于Hexo是使用Node.js开发的，所以死前必须安装好Node。安装Hexo的命令相当简单：1npm install hexo-cli -g
+进入将要创建博客的目录，执行：1hexo init &amp;#60;&amp;#30446;&amp;#24405;&amp;#21517;&amp;#31216;&amp;#">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hexo 制作个人博客">
 <meta property="og:url" content="http://boxingYi.github.io/2015/09/14/Hexo-制作个人博客/index.html">
 <meta property="og:site_name" content="BoxingYi's Blog">
-<meta property="og:description" content="搞了几天，终于找到一个轻便已用的个人blog系统——hexo。配置好一堆东西后，就挂到github上了。">
-<meta property="og:updated_time" content="2015-09-16T16:27:41.253Z">
+<meta property="og:description" content="最近发现一个轻便易用的个人blog系统——hexo。配置好一堆东西后，就挂到github上了。
+Hexo的官网为:Hexo。由于Hexo是使用Node.js开发的，所以死前必须安装好Node。安装Hexo的命令相当简单：1npm install hexo-cli -g
+进入将要创建博客的目录，执行：1hexo init &amp;#60;&amp;#30446;&amp;#24405;&amp;#21517;&amp;#31216;&amp;#">
+<meta property="og:updated_time" content="2015-09-16T18:01:04.060Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo 制作个人博客">
-<meta name="twitter:description" content="搞了几天，终于找到一个轻便已用的个人blog系统——hexo。配置好一堆东西后，就挂到github上了。">
+<meta name="twitter:description" content="最近发现一个轻便易用的个人blog系统——hexo。配置好一堆东西后，就挂到github上了。
+Hexo的官网为:Hexo。由于Hexo是使用Node.js开发的，所以死前必须安装好Node。安装Hexo的命令相当简单：1npm install hexo-cli -g
+进入将要创建博客的目录，执行：1hexo init &amp;#60;&amp;#30446;&amp;#24405;&amp;#21517;&amp;#31216;&amp;#">
   
   
     <link rel="icon" href="favicon.png">
@@ -140,12 +146,28 @@
     <div class="article-entry" itemprop="articleBody">
       
                 
-        <p>搞了几天，终于找到一个轻便已用的个人blog系统——hexo。配置好一堆东西后，就挂到github上了。</p>
+        <p>最近发现一个轻便易用的个人blog系统——hexo。配置好一堆东西后，就挂到github上了。</p>
+<p>Hexo的官网为:<a href="http://hexo.io" target="_blank" rel="external">Hexo</a>。由于Hexo是使用Node.js开发的，所以死前必须安装好Node。安装Hexo的命令相当简单：<br><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g</span><br></pre></td></tr></table></figure></p>
+<p>进入将要创建博客的目录，执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init &#60;&#30446;&#24405;&#21517;&#31216;&#62;&#10;cd &#60;&#30446;&#24405;&#21517;&#31216;&#62;</span><br></pre></td></tr></table></figure></p>
+<p>进入博客目录后，执行以下命令安装依赖的模块：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install</span><br></pre></td></tr></table></figure></p>
+<p>实践过程中，发现Hexo 3.0 把Server独立成模块了，需要另外安装，在博客的目录里执行：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-server --save</span><br></pre></td></tr></table></figure></p>
+<p>此时，只需要执行以下命令把服务器启动起来，浏览器访问：<a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a> 即可访问到本地博客<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure></p>
+<p> 创建第一篇博文，命令是格式是 hexo new [layout] &lt;名称&gt;。其中，layout有三种可选值：post（正式博文），draft（不公开的草稿），page（单网页）；下面命令创建了一个名为“博客名称”的草稿。<br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new draft &#34;&#21338;&#25991;&#21517;&#31216;&#34;</span><br></pre></td></tr></table></figure></p>
+<p> 草稿是不会在博客中显示的，顾名思义就是没写完还不想发布博文，所以就先写写草稿吧。当草稿写好了，使用命令 hexo publish [layout] <filename> 就可以把草稿发布成公开的博文了。<br> Hexo博客可以根据个人喜好更改博客的主题，在这个链接中选择自己喜欢的主题:<a href="https://hexo.io/themes/" target="_blank" rel="external">https://hexo.io/themes/</a>。一般而言，每个主题在github中都会给出主题的安装方法。如本文使用的主题：<a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="external">https://github.com/ppoffice/hexo-theme-icarus</a><br> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https://github.com/ppoffice/hexo-theme-icarus.git themes/icarus</span><br></pre></td></tr></table></figure></filename></p>
+<ul>
+<li>Rename themes\icarus_config.yml.example to themes\icarus_config.yml;</li>
+<li>Copy themes\icarus_config.yml.site.example to your hexo blog’s root directory and rename it to _config.yml;</li>
+<li>Then modify theme setting in _config.yml to icarus.</li>
+</ul>
+<p>需要注意的是博客根目录下的_config.yml和主题根目录下的_config.yml文件的作用都是用于配置博客的。（<strong>配置过程中遇到过一个坑，就是_config.yml文件里的键值配置中间的冒号后面必须要有个空格，否则配置读取会失败的</strong>）</p>
+<p>最后，是把Hexo生成的静态博客部署到Github中。此过程中遇到的坑就是根目录下的_config.yml配置文件里的deploy属性,当时提交到github中死活不通过。这是repo的url配置有误导致的，采用以下方式配置就ok了。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deploy: &#10;  type: git&#10;  repo: https://&#123;username&#125;:&#123;password&#125;@github.com/&#123;username&#125;/&#123;username&#125;.github.io.git&#10;  branch: master</span><br></pre></td></tr></table></figure></p>
+<p>配置完毕后，仅需以下两行命令就可以把博客系统部署到github上了<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo generate&#10;hexo deploy</span><br></pre></td></tr></table></figure></p>
+<p>访问:<a href="http://{username}.github.io" target="_blank" rel="external">http://{username}.github.io</a>,验证自己的成果吧！</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://boxingYi.github.io/2015/09/14/Hexo-制作个人博客/" data-id="cien1plzr0000g0qoqxyxcdc0" class="article-share-link">分享到</a>
+      <a data-url="http://boxingYi.github.io/2015/09/14/Hexo-制作个人博客/" data-id="cien2vyex0001p4qo50iwgcg2" class="article-share-link">分享到</a>
       
       
     </footer>
